@@ -5,7 +5,7 @@ then
     exit 1
 fi
 
-for i in $*
+for i in "$*"
 do
     echo $i
     pid=`pgrep $i` && kill $pid
